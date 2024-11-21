@@ -1,0 +1,13 @@
+<div class="perfil">
+    <div class="perfil-header">
+      <img [src]="usuario.imagen" alt="Foto de perfil" class="imagen-perfil" />
+      <h2>{{ usuario.nombre }}</h2>
+    </div>
+    <div class="perfil-detalle">
+      <p><strong>Correo:</strong> {{ usuario.correo }}</p>
+      <p><strong>Teléfono:</strong> {{ usuario.telefono }}</p>
+      <p><strong>Dirección:</strong> {{ usuario.direccion }}</p>
+      <a routerLink="/restaurar-contrasena">¿Olvidaste tu contraseña?</a>
+    </div>
+  </div>
+  

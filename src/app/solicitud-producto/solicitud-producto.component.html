@@ -1,0 +1,31 @@
+<div class="container mt-5">
+    <div class="card p-4 shadow-sm">
+      <h3 class="text-center mb-4">Solicitud de Producto Financiero</h3>
+      <form>
+        <div class="form-group mb-3">
+          <label for="tipoProducto">Tipo de Producto</label>
+          <select id="tipoProducto" class="form-control" required>
+            <option value="" disabled selected>Selecciona un producto financiero</option>
+            <option value="tarjetaCredito">Tarjeta de Crédito</option>
+            <option value="creditoPersonal">Crédito Personal</option>
+            <option value="creditoHipotecario">Crédito Hipotecario</option>
+            <option value="creditoAutomotriz">Crédito Automotriz</option>
+          </select>
+        </div>
+        <div class="form-group mb-3">
+          <label for="nombre">Nombre Completo</label>
+          <input type="text" id="nombre" class="form-control" placeholder="Ingresa tu nombre completo" required>
+        </div>
+        <div class="form-group mb-3">
+          <label for="correo">Correo Electrónico</label>
+          <input type="email" id="correo" class="form-control" placeholder="Ingresa tu correo electrónico" required>
+        </div>
+        <div class="form-group mb-3">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" class="form-control" placeholder="Ingresa tu número de teléfono" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Enviar Solicitud</button>
+      </form>
+    </div>
+  </div>
+  

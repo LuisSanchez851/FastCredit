@@ -1,0 +1,24 @@
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card p-4 shadow-sm" style="width: 350px;">
+      <h3 class="text-center mb-4">Iniciar Sesión</h3>
+      <div class="role-selection">
+        <button (click)="onRoleSelect('Usuario')" [class.active]="role === 'Usuario'" class="btn btn-outline-primary w-100 mb-2">Usuario</button>
+        <button (click)="onRoleSelect('Empleado')" [class.active]="role === 'Empleado'" class="btn btn-outline-primary w-100 mb-2">Empleado</button>
+      </div>      
+      <form>
+        <div class="form-group mb-3">
+          <label for="username">Usuario</label>
+          <input type="text" id="username" class="form-control" placeholder="Ingresa tu usuario" required>
+        </div>
+        <div class="form-group mb-3">
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" class="form-control" placeholder="Ingresa tu contraseña" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
+      </form>
+      <div class="text-center mt-3">
+        <a routerLink="/sesion/olvidar">¿Olvidaste tu contraseña?</a>
+      </div>
+    </div>
+  </div>
+  

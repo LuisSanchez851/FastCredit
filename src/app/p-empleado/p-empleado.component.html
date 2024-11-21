@@ -1,0 +1,14 @@
+<div class="admin-container">
+    <h2>Bienvenido, {{ username }}</h2>
+    <p>Esta es tu página de empleado. Aquí puedes gestionar los datos del sistema y realizar tareas administrativas.</p>
+  
+    <div class="menu">
+      <ul>
+        <li><a routerLink="/admin/perfil">Ver perfil</a></li>
+        <li><a routerLink="/admin/gestionar">Gestionar usuarios</a></li>
+        <li><a routerLink="/creacion-producto">Ver reportes</a></li>
+        <li><a (click)="logout()">Cerrar sesión</a></li>
+      </ul>
+    </div>
+  </div>
+  

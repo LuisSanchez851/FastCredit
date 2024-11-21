@@ -1,0 +1,54 @@
+<div class="container mt-5">
+  <div class="card p-4 shadow-sm">
+    <h3 class="text-center mb-4">Registro de Usuario</h3>
+    <form id="registrationForm">
+      <div class="form-group mb-3">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" class="form-control" placeholder="Ingresa tu nombre" required>
+      </div>
+      <div class="form-group mb-3">
+        <label for="apellidos">Apellidos</label>
+        <input type="text" id="apellidos" class="form-control" placeholder="Ingresa tus apellidos" required>
+      </div>
+      <div class="form-group mb-3">
+        <label for="tipoDocumento">Tipo de Documento</label>
+        <select id="tipoDocumento" class="form-control" required>
+          <option value="" disabled selected>Selecciona un tipo de documento</option>
+          <option value="CC">Cédula de Ciudadanía</option>
+          <option value="TI">Tarjeta de Identidad</option>
+          <option value="CE">Cédula de Extranjería</option>
+          <option value="PP">Pasaporte</option>
+        </select>
+      </div>
+      <div class="form-group mb-3">
+        <label for="numeroDocumento">Número de Documento</label>
+        <input type="text" id="numeroDocumento" class="form-control" placeholder="Ingresa tu número de documento" required>
+      </div>
+      <div class="form-group mb-3">
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" class="form-control" placeholder="Ingresa tu número de teléfono" required>
+      </div>
+      <div class="form-group mb-3">
+        <label for="correo">Correo Electrónico</label>
+        <input type="email" id="correo" class="form-control" placeholder="Ingresa tu correo electrónico" required>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Registrarse</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  // Obtener el formulario
+  const form = document.getElementById('registrationForm');
+
+  // Escuchar el evento submit
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Evitar el envío real del formulario
+
+    // Mostrar la alerta
+    alert('¡Registro satisfactorio!');
+
+    // Opcional: Aquí podrías reiniciar el formulario si es necesario
+    form.reset();
+  });
+</script>

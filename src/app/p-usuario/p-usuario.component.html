@@ -1,0 +1,14 @@
+<div class="usuario-container">
+    <h2>Bienvenido, {{ username }}</h2>
+    <p>Esta es tu página de usuario. Aquí puedes gestionar tu cuenta, ver tus datos y mucho más.</p>
+  
+    <div class="menu">
+      <ul>
+        <li><a routerLink="/perfil-usuario">Ver mi perfil</a></li>
+        <li><a routerLink="/configuracion">Configuraciones</a></li>
+        <li><a routerLink="/historial">Ver historial de compras</a></li>
+        <li><a (click)="logout()">Cerrar sesión</a></li>
+      </ul>
+    </div>
+  </div>
+  

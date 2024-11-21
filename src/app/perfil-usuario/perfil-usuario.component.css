@@ -1,0 +1,28 @@
+.perfil {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-top: 30px;
+  }
+  
+  .perfil-header {
+    margin-bottom: 20px;
+  }
+  
+  .imagen-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+  }
+  
+  p {
+    text-align: left;
+    margin: 10px 0;
+  }
+  
