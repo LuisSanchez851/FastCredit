@@ -1,18 +1,33 @@
 .container {
-    max-width: 1200px;
-  }
-  
-  .navbar .navbar-nav .nav-link {
-    color: white;
-    font-weight: bold;
-  }
-  
-  .navbar .btn {
-    font-weight: bold;
-  }
-  
-  button.btn-primary {
-    width: 100%;
-    font-weight: bold;
-  }
-  
+  max-width: 1200px;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: white;
+  font-weight: bold;
+}
+
+.navbar .btn {
+  font-weight: bold;
+}
+
+button.btn-primary {
+  width: 100%;
+  font-weight: bold;
+}
+
+/* Estilos del footer */
+.footer-logo {
+max-width: 150px;
+}
+
+footer a:hover {
+text-decoration: underline;
+color: #ffd700; /* Color dorado al pasar el ratón */
+}
+
+@media (max-width: 768px) {
+footer .row {
+  text-align: center;
+}
+}
