@@ -1,94 +1,325 @@
 <div>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
 </div>
 
 <div class="container mt-5">
-  <div class="row justify-content-center" style="margin-top: 10%;">
-    
-    <div class="col text-center m-5">
-      <img src="assets/img/logoCreidtFast.png" alt="Logo Credit Fast" class="img-fluid" style="max-width: 150px;">
-      <p class="mt-3">Solicita tu tarjeta de crédito con nosotros</p>
-      <p>¡Es muy fácil!</p>
-      <p>Haz realidad tus metas con nuestra tarjeta de crédito Credit Fast. Te ofrecemos tasas competitivas, aprobaciones rápidas y acceso a descuentos en cientos de comercios afiliados.</p>
-    </div>
-    
-    <div class="col text-center m-5">
-      <img src="assets/img/tarjetacredito.png" alt="Tarjeta de crédito" class="img-fluid">
-      <p class="mt-3">Con nuestra tarjeta de crédito podrás disfrutar de beneficios exclusivos, promociones especiales y la tranquilidad de realizar compras seguras en cualquier lugar del mundo.</p>
-      <button class="btn btn-primary mt-3" routerLink="solicitud">SOLICITAR</button>
+  <h2 class="text-center mb-4">Galería de Imágenes</h2>
+  <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
 
+    <!-- Slides -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img src="assets/img/image1.jpg" class="card-img-top" alt="Imagen 1">
+              <div class="card-body">
+                <h5 class="card-title">Título 1</h5>
+                <p class="card-text">Descripción breve de la imagen 1.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img src="assets/img/image2.jpg" class="card-img-top" alt="Imagen 2">
+              <div class="card-body">
+                <h5 class="card-title">Título 2</h5>
+                <p class="card-text">Descripción breve de la imagen 2.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img src="assets/img/image3.jpg" class="card-img-top" alt="Imagen 3">
+              <div class="card-body">
+                <h5 class="card-title">Título 3</h5>
+                <p class="card-text">Descripción breve de la imagen 3.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img src="assets/img/image4.jpg" class="card-img-top" alt="Imagen 4">
+              <div class="card-body">
+                <h5 class="card-title">Título 4</h5>
+                <p class="card-text">Descripción breve de la imagen 4.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img src="assets/img/image5.jpg" class="card-img-top" alt="Imagen 5">
+              <div class="card-body">
+                <h5 class="card-title">Título 5</h5>
+                <p class="card-text">Descripción breve de la imagen 5.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img src="assets/img/image6.jpg" class="card-img-top" alt="Imagen 6">
+              <div class="card-body">
+                <h5 class="card-title">Título 6</h5>
+                <p class="card-text">Descripción breve de la imagen 6.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img src="assets/img/image7.jpg" class="card-img-top" alt="Imagen 7">
+              <div class="card-body">
+                <h5 class="card-title">Título 7</h5>
+                <p class="card-text">Descripción breve de la imagen 7.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img src="assets/img/image8.jpg" class="card-img-top" alt="Imagen 8">
+              <div class="card-body">
+                <h5 class="card-title">Título 8</h5>
+                <p class="card-text">Descripción breve de la imagen 8.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img src="assets/img/image9.jpg" class="card-img-top" alt="Imagen 9">
+              <div class="card-body">
+                <h5 class="card-title">Título 9</h5>
+                <p class="card-text">Descripción breve de la imagen 9.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
   </div>
+</div>
+
+
+<div class="container mt-5">
+  <div class="row justify-content-center" style="margin-top: 10%">
+    <div class="col text-center m-5">
+      <img
+        src="assets/img/logoCreidtFast.png"
+        alt="Logo Credit Fast"
+        class="img-fluid"
+        style="max-width: 150px"
+      />
+      <p class="mt-3">Solicita tu tarjeta de crédito con nosotros</p>
+      <p>¡Es muy fácil!</p>
+      <p>
+        Haz realidad tus metas con nuestra tarjeta de crédito Credit Fast. Te
+        ofrecemos tasas competitivas, aprobaciones rápidas y acceso a descuentos
+        en cientos de comercios afiliados.
+      </p>
+    </div>
+
+    <div class="col text-center m-5">
+      <img
+        src="assets/img/tarjetacredito.png"
+        alt="Tarjeta de crédito"
+        class="img-fluid"
+      />
+      <p class="mt-3">
+        Con nuestra tarjeta de crédito podrás disfrutar de beneficios
+        exclusivos, promociones especiales y la tranquilidad de realizar compras
+        seguras en cualquier lugar del mundo.
+      </p>
+      <button class="btn btn-primary mt-3" routerLink="solicitud">
+        SOLICITAR
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5" style="text-align: center;">
+  <h2>¿Quienes somos?</h2>
+  <p style="margin: 50px;">
+    Es una empresa financiera dedicada a ofrecer soluciones de crédito
+    personalizadas y accesibles, pensadas para acompañarte en cada etapa de tu
+    vida financiera. Sabemos que en ocasiones surgen necesidades imprevistas o
+    proyectos que requieren un impulso económico, por eso nos comprometemos a
+    brindarte el apoyo que necesitas de manera rápida, segura y flexible. Desde
+    nuestra fundación, hemos trabajado para ser un aliado confiable en el acceso
+    al crédito, con un enfoque en la inclusión financiera y el bienestar de
+    nuestros clientes. Nuestro objetivo es ayudarte a lograr tus metas
+    personales, familiares o profesionales, ofreciéndote productos financieros
+    adaptados a tus necesidades y capacidad de pago.
+  </p>
+</div>
+
+<div class="container mt-5" style="text-align: center;">
+  <h2>Nuestra Vision</h2>
+  <p style="margin: 50px;">
+    Ser la empresa financiera líder en inclusión y accesibilidad de crédito,
+    brindando productos innovadores que promuevan el bienestar económico de
+    nuestros clientes y fomenten su crecimiento financiero personal y familiar.
+  </p>
+</div>
+<div class="container mt-5" style="text-align: center;">
+  <h2>Nuestra Mision</h2>
+  <p style="margin: 50px;">
+    Ofrecer soluciones de crédito accesibles, transparentes y personalizadas,
+    que permitan a nuestros clientes alcanzar sus objetivos financieros de
+    manera responsable y con confianza.
+  </p>
 </div>
 
 <div class="container mt-5">
   <h2 class="text-center mb-4">Nuestros Productos</h2>
   <div class="row justify-content-center">
-    <div class="col-md-4 mb-4">
-      <div class="card shadow-sm">
-        <img src="assets/img/tarjeta2" class="card-img-top" alt="Tarjeta de Crédito Roja">
-        <div class="card-body">
-          <h5 class="card-title">Tarjeta de Crédito Clásica</h5>
-          <p class="card-text">
-            La tarjeta de crédito clásica es el tipo de tarjeta más común y accesible. Ofrece un límite de crédito preestablecido y permite hacer compras en establecimientos físicos y en línea, así como realizar avances en efectivo. Generalmente tiene tasas de interés moderadas y la tarjeta puede ofrecer beneficios básicos como programas de puntos o descuentos en ciertos comercios.
-          </p>
-          <button class="btn btn-primary w-100">Solicitar</button>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="col-md-4 mb-4">
-      <div class="card shadow-sm">
-        <div class="d-flex align-items-center p-3">
-          <img src="assets/img/tarjeta3" class="img-fluid" alt="Tarjeta de Crédito Azul" style="width: 60px; height: auto;">
-          <div class="ms-3">
+    <!-- Tarjeta 1 -->
+    <div class="col-12 col-md-20 mb-4">
+      <div class="card shadow-sm p-5">
+        <div class="d-flex align-items-center">
+          <img
+            src="assets/img/tarjeta2.png"
+            class="img-fluid"
+            alt="Tarjeta de Crédito Roja"
+            style="width: 300px; height: auto"
+          />
+          <div class="ms-3 flex-grow-1">
             <h5 class="card-title mb-1">Tarjeta de Crédito Clásica</h5>
-            <p class="card-text small text-muted">
-              La tarjeta de crédito clásica es el tipo más común y accesible. Ofrece un límite de crédito preestablecido y permite hacer compras en establecimientos físicos y en línea, así como realizar avances en efectivo. Generalmente, las tasas de interés son moderadas, y la tarjeta puede ofrecer algunos beneficios básicos como programas de puntos o descuentos en ciertos comercios.
+            <p class="card-text small text-muted mb-0">
+              La tarjeta de crédito clásica es el tipo más común y accesible.
+              Ofrece un límite de crédito preestablecido y permite hacer compras
+              en establecimientos físicos y en línea, así como realizar avances
+              en efectivo. Generalmente tiene tasas de interés moderadas y puede
+              ofrecer beneficios básicos como programas de puntos o descuentos
+              en ciertos comercios.
             </p>
           </div>
-        </div>
-        <div class="card-footer text-end">
-          <button class="btn btn-primary w-100">Solicitar</button>
+          <button class="btn btn-primary" routerLink="solicitud">
+            Solicitar
+          </button>
         </div>
       </div>
     </div>
-    
-
-
-
-    <div class="col-md-4 mb-4">
-      <div class="card shadow-sm">
-        <img src="assets/img/tarjeta4" class="card-img-top" alt="Tarjeta de Crédito Negra">
-        <div class="card-body">
-          <h5 class="card-title">Tarjeta de Crédito Clásica</h5>
-          <p class="card-text">
-            La tarjeta de crédito clásica es el tipo de tarjeta más común y accesible. Ofrece un límite de crédito preestablecido y permite hacer compras en establecimientos físicos y en línea, así como realizar avances en efectivo. Generalmente tiene tasas de interés moderadas y la tarjeta puede ofrecer beneficios básicos como programas de puntos o descuentos en ciertos comercios.
-          </p>
-          <button class="btn btn-primary w-100">Solicitar</button>
+    <!-- Tarjeta 2 -->
+    <div class="col-12 col-md-20 mb-5" style="">
+      <div class="card shadow-sm p-5">
+        <div class="d-flex align-items-center">
+          <img
+            src="assets/img/tarjeta3.png"
+            class="img-fluid"
+            alt="Tarjeta de Crédito Azul"
+            style="width: 300px; height: auto"
+          />
+          <div class="ms-3 flex-grow-1">
+            <h5 class="card-title mb-1">Tarjeta de Crédito Clásica</h5>
+            <p class="card-text small text-muted mb-0">
+              La tarjeta de crédito clásica es el tipo más común y accesible.
+              Ofrece un límite de crédito preestablecido y permite hacer compras
+              en establecimientos físicos y en línea, así como realizar avances
+              en efectivo. Generalmente tiene tasas de interés moderadas y puede
+              ofrecer beneficios básicos como programas de puntos o descuentos
+              en ciertos comercios.
+            </p>
+          </div>
+          <button class="btn btn-primary" routerLink="solicitud">
+            Solicitar
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Tarjeta 3 -->
+    <div class="col-12 col-md-20 mb-4">
+      <div class="card shadow-sm p-5">
+        <div class="d-flex align-items-center">
+          <img
+            src="assets/img/tarjeta4.png"
+            class="img-fluid"
+            alt="Tarjeta de Crédito Negra"
+            style="width: 275px; height: auto"
+          />
+          <div class="ms-3 flex-grow-1">
+            <h5 class="card-title mb-1">Tarjeta de Crédito Clásica</h5>
+            <p class="card-text small text-muted mb-2">
+              La tarjeta de crédito clásica es el tipo más común y accesible.
+              Ofrece un límite de crédito preestablecido y permite hacer compras
+              en establecimientos físicos y en línea, así como realizar avances
+              en efectivo. Generalmente tiene tasas de interés moderadas y puede
+              ofrecer beneficios básicos como programas de puntos o descuentos
+              en ciertos comercios.
+            </p>
+          </div>
+          <button class="btn btn-primary" routerLink="solicitud">
+            Solicitar
+          </button>
         </div>
       </div>
     </div>
   </div>
 </div>
 
+<div >
+  <h2 class="text-center mb-4">Ubicaciones</h2>
+  <div class="row justify-content-center" style="margin: 50px; ">
 
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15907.140682352412!2d-74.0808607!3d4.6323787!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a0f9bb0ce7%3A0x5d71ff487837183c!2sUniempresarial!5e0!3m2!1ses!2sco!4v1732628722747!5m2!1ses!2sco" width="300" height="450" style="border-radius: 20px;" loading="lazy"  referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+</div>
 
 <footer class="bg-dark text-white py-4">
   <div class="container">
     <div class="row">
-
       <div class="col-md-4 mb-3 mb-md-0 text-center text-md-start">
-        <img src="assets/img/logoCreidtFast.png" alt="Logo Credit Fast" class="img-fluid" style="max-width: 150px; border-radius: 50%;">
+        <img
+          src="assets/img/logoCreidtFast.png"
+          alt="Logo Credit Fast"
+          class="img-fluid"
+          style="max-width: 150px; border-radius: 50%"
+        />
       </div>
 
-      <div class="col-md-3 text-center text-md-end" style="margin-top: 8%;margin-left: 2%;">
+      <div
+        class="col-md-3 text-center text-md-end"
+        style="margin-top: 8%; margin-left: 2%"
+      >
         <div class="social-icons">
-          <a href="#" class="text-white mx-3"><i class="fab fa-facebook-f fa-2x"></i></a>
-          <a href="#" class="text-white mx-3"><i class="fab fa-twitter fa-2x"></i></a>
-          <a href="#" class="text-white mx-3"><i class="fab fa-instagram fa-2x"></i></a>
-          <a href="#" class="text-white mx-3"><i class="fab fa-linkedin-in fa-2x"></i></a>
+          <a href="#" class="text-white mx-3"
+            ><i class="fab fa-facebook-f fa-2x"></i
+          ></a>
+          <a href="#" class="text-white mx-3"
+            ><i class="fab fa-twitter fa-2x"></i
+          ></a>
+          <a href="#" class="text-white mx-3"
+            ><i class="fab fa-instagram fa-2x"></i
+          ></a>
+          <a href="#" class="text-white mx-3"
+            ><i class="fab fa-linkedin-in fa-2x"></i
+          ></a>
         </div>
       </div>
     </div>

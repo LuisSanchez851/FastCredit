@@ -31,3 +31,20 @@ footer .row {
   text-align: center;
 }
 }
+
+.card {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.card img {
+  border-radius: 5px;
+}
+
+.card button {
+  white-space: nowrap; /* Asegura que el botón no se ajuste */
+}
+
+.card-text {
+  font-size: 0.9rem; /* Texto ligeramente más pequeño */
+}
