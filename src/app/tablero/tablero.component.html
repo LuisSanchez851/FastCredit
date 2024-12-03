@@ -1,0 +1,104 @@
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar -->
+        <nav class="col-md-3 col-lg-2 d-md-block bg-dark sidebar pt-4">
+            <div class="position-fixed">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" routerLink="/p-empleado">
+                            <i class="bi bi-house-door-fill"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" routerLink="/creacion-producto">
+                            <i class="bi bi-wallet3"></i> Creación de producto
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" routerLink="/listaSolicitud">
+                            <i class="bi bi-check-circle"></i> Lista de Solicitudes
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" routerLink="/solicitudEntrega">
+                            <i class="bi bi-box-seam"></i> Solicitud de entrega
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="/productosBanco">
+                            <i class="bi bi-credit-card-2-front"></i> Productos
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="col-md-9 col-lg-10">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <div class="container-fluid">
+                    <span class="navbar-brand mb-0 h1">Dashboard</span>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- Earnings Cards -->
+            <div class="row mt-4">
+                <div class="col-md-3 mb-3">
+                    <div class="card text-white bg-info">
+                        <div class="card-body">
+                            <h5 class="card-title">Solicitudes (Mensual)</h5>
+                            <p class="card-text">$40,000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card text-white bg-success">
+                        <div class="card-body">
+                            <h5 class="card-title">Solicitudes (Anuales)</h5>
+                            <p class="card-text">$215,000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card text-white bg-warning">
+                        <div class="card-body">
+                            <h5 class="card-title">Aceptadas</h5>
+                            <p class="card-text">50%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card text-white bg-danger">
+                        <div class="card-body">
+                            <h5 class="card-title">Solicitudes Pendientes</h5>
+                            <p class="card-text">18</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charts Section -->
+            <div class="row mt-4">
+                <div class="col-md-8">
+                    <div class="card border-primary">
+                        <div class="card-body">
+                            <h5 class="card-title">Resumen de Solicitudes</h5>
+                            <canvas id="earningsChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-success">
+                        <div class="card-body">
+                            <h5 class="card-title">Estado de solicitud</h5>
+                            <canvas id="revenueChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

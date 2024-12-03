@@ -1,0 +1,83 @@
+/* Contenedor principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Título */
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Estilos de la tabla */
+  .solicitudes-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .solicitudes-table th, .solicitudes-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .solicitudes-table th {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  .solicitudes-table td {
+    background-color: #fff;
+  }
+  
+  /* Colores de los estados */
+  .estado {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .estado.pendiente {
+    background-color: #f1c40f;
+  }
+  
+  .estado.aprobada {
+    background-color: #27ae60;
+  }
+  
+  .estado.rechazada {
+    background-color: #e74c3c;
+  }
+  
+  /* Estilos de la paginación */
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination .prev-btn, .pagination .next-btn {
+    padding: 8px 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .pagination .prev-btn:hover, .pagination .next-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .pagination .page-info {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  

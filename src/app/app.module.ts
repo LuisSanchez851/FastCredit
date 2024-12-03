@@ -13,6 +13,11 @@ import { PUsuarioComponent } from './p-usuario/p-usuario.component';
 import { PEmpleadoComponent } from './p-empleado/p-empleado.component';
 import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.component';
 import { PerfilEmpleadoComponent } from './perfil-empleado/perfil-empleado.component';
+import { TableroComponent } from './tablero/tablero.component';
+import { ListaSolicitudesComponent } from './lista-solicitudes/lista-solicitudes.component';
+import { SolicitudEntregaComponent } from './solicitud-entrega/solicitud-entrega.component';
+import { ProductosBancoComponent } from './productos-banco/productos-banco.component';
+import { ProductosClienteComponent } from './productos-cliente/productos-cliente.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +32,11 @@ import { PerfilEmpleadoComponent } from './perfil-empleado/perfil-empleado.compo
     PEmpleadoComponent,
     PerfilUsuarioComponent,
     PerfilEmpleadoComponent,
+    TableroComponent,
+    ListaSolicitudesComponent,
+    SolicitudEntregaComponent,
+    ProductosBancoComponent,
+    ProductosClienteComponent,
 
   ],
   imports: [

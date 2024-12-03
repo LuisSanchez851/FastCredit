@@ -9,6 +9,10 @@ import { PUsuarioComponent } from './p-usuario/p-usuario.component';
 import { PEmpleadoComponent} from './p-empleado/p-empleado.component';
 import { CreacionProductoComponent} from './creacion-producto/creacion-producto.component';
 import { PerfilUsuarioComponent } from './perfil-usuario/perfil-usuario.component';
+import { TableroComponent } from './tablero/tablero.component';
+import { ListaSolicitudesComponent } from './lista-solicitudes/lista-solicitudes.component';
+import { SolicitudEntregaComponent } from './solicitud-entrega/solicitud-entrega.component';
+import { ProductosBancoComponent } from './productos-banco/productos-banco.component';
 
 
 const routes: Routes = [
@@ -22,7 +26,10 @@ const routes: Routes = [
   {path: 'creacion-producto', component: CreacionProductoComponent },
   {path: 'perfil-usuario', component: PerfilUsuarioComponent},
   {path: 'restaurar-contrasena', component: RestaurarContrasenaComponent},
-
+  {path: 'tablero', component:  TableroComponent},
+  {path: 'listaSolicitud', component:  ListaSolicitudesComponent},
+  {path: 'solicitudEntrega', component:  SolicitudEntregaComponent},
+  {path: 'productosBanco', component:  ProductosBancoComponent},
  
   {
     path: 'sesion',
