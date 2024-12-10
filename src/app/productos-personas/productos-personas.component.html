@@ -1,0 +1,135 @@
+<div class="container mt-5">
+    <!-- Título de la página -->
+    <h1 class="text-center mb-4 text-primary">Productos que has Adquirido</h1>
+  
+    <!-- Filtro de búsqueda y disponibilidad -->
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <input type="text" class="form-control form-control-lg border-info" placeholder="Buscar productos..." id="searchInput">
+      </div>
+      <div class="col-md-6">
+        <select class="form-select form-select-lg" id="availabilityFilter">
+          <option value="">Filtrar por disponibilidad</option>
+          <option value="Disponible">Disponible</option>
+          <option value="No disponible">No disponible</option>
+          <option value="En espera">En espera</option>
+        </select>
+      </div>
+    </div>
+  
+    <!-- Fila de productos adquiridos -->
+    <div class="row">
+      <!-- Producto 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg">
+          <img src="assets/img/tarjeta4.png" alt="Producto A" class="card-img-top" style="height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Producto A</h5>
+            <p class="card-text text-muted">Este es un excelente producto adquirido recientemente. Ofrece gran calidad y es perfecto para tus necesidades.</p>
+            <p><strong>Precio:</strong> <span class="text-warning">$10.00</span></p>
+            <p><strong>Fecha de compra:</strong> <span class="text-success">15 de Octubre, 2024</span></p>
+            <p><strong>Disponibilidad:</strong> <span class="badge bg-success">Disponible</span></p>
+          </div>
+          <div class="card-footer text-center">
+            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal1">Ver detalles</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Producto 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg">
+          <img src="assets/img/tarjeta3.png" alt="Producto B" class="card-img-top" style="height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Producto B</h5>
+            <p class="card-text text-muted">Producto B adquirido el mes pasado. Aunque no está disponible actualmente, pronto estará de vuelta.</p>
+            <p><strong>Precio:</strong> <span class="text-warning">$20.00</span></p>
+            <p><strong>Fecha de compra:</strong> <span class="text-success">12 de Septiembre, 2024</span></p>
+            <p><strong>Disponibilidad:</strong> <span class="badge bg-danger">No disponible</span></p>
+          </div>
+          <div class="card-footer text-center">
+            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal2">Ver detalles</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Producto 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-lg">
+          <img src="assets/img/tarjeta2.png" alt="Producto C" class="card-img-top" style="height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Producto C</h5>
+            <p class="card-text text-muted">Producto C adquirido hace poco. Está en espera para su reposición.</p>
+            <p><strong>Precio:</strong> <span class="text-warning">$15.00</span></p>
+            <p><strong>Fecha de compra:</strong> <span class="text-success">25 de Octubre, 2024</span></p>
+            <p><strong>Disponibilidad:</strong> <span class="badge bg-warning text-dark">En espera</span></p>
+          </div>
+          <div class="card-footer text-center">
+            <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#productModal3">Ver detalles</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Modal de detalles del producto 1 -->
+    <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel1" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title" id="productModalLabel1">Detalles del Producto A</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="assets/img/tarjeta4.png" alt="Producto A" class="img-fluid mb-3">
+            <h4 class="text-success">Producto A</h4>
+            <p>Este es un excelente producto adquirido recientemente. Ofrece gran calidad y es perfecto para tus necesidades.</p>
+            <p><strong>Precio:</strong> <span class="text-warning">$10.00</span></p>
+            <p><strong>Fecha de compra:</strong> <span class="text-success">15 de Octubre, 2024</span></p>
+            <p><strong>Disponibilidad:</strong> <span class="badge bg-success">Disponible</span></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Modal de detalles del producto 2 -->
+    <div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModalLabel2" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title" id="productModalLabel2">Detalles del Producto B</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="assets/img/tarjeta3.png" alt="Producto B" class="img-fluid mb-3">
+            <h4 class="text-danger">Producto B</h4>
+            <p>Producto B adquirido el mes pasado. Actualmente está agotado, pero estará disponible pronto.</p>
+            <p><strong>Precio:</strong> <span class="text-warning">$20.00</span></p>
+            <p><strong>Fecha de compra:</strong> <span class="text-success">12 de Septiembre, 2024</span></p>
+            <p><strong>Disponibilidad:</strong> <span class="badge bg-danger">No disponible</span></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Modal de detalles del producto 3 -->
+    <div class="modal fade" id="productModal3" tabindex="-1" aria-labelledby="productModalLabel3" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title" id="productModalLabel3">Detalles del Producto C</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="assets/img/tarjeta2.png" alt="Producto C" class="img-fluid mb-3">
+            <h4 class="text-warning">Producto C</h4>
+            <p>Este producto está en espera para ser reabastecido. Es un artículo muy popular.</p>
+            <p><strong>Precio:</strong> <span class="text-warning">$15.00</span></p>
+            <p><strong>Fecha de compra:</strong> <span class="text-success">25 de Octubre, 2024</span></p>
+            <p><strong>Dispon
+  

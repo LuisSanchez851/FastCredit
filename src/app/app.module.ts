@@ -17,7 +17,7 @@ import { TableroComponent } from './tablero/tablero.component';
 import { ListaSolicitudesComponent } from './lista-solicitudes/lista-solicitudes.component';
 import { SolicitudEntregaComponent } from './solicitud-entrega/solicitud-entrega.component';
 import { ProductosBancoComponent } from './productos-banco/productos-banco.component';
-import { ProductosClienteComponent } from './productos-cliente/productos-cliente.component';
+import { ProductosPersonasComponent } from './productos-personas/productos-personas.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +36,7 @@ import { ProductosClienteComponent } from './productos-cliente/productos-cliente
     ListaSolicitudesComponent,
     SolicitudEntregaComponent,
     ProductosBancoComponent,
-    ProductosClienteComponent,
+    ProductosPersonasComponent,
 
   ],
   imports: [

@@ -13,6 +13,7 @@ import { TableroComponent } from './tablero/tablero.component';
 import { ListaSolicitudesComponent } from './lista-solicitudes/lista-solicitudes.component';
 import { SolicitudEntregaComponent } from './solicitud-entrega/solicitud-entrega.component';
 import { ProductosBancoComponent } from './productos-banco/productos-banco.component';
+import { ProductosPersonasComponent } from './productos-personas/productos-personas.component';
 
 
 const routes: Routes = [
@@ -30,6 +31,8 @@ const routes: Routes = [
   {path: 'listaSolicitud', component:  ListaSolicitudesComponent},
   {path: 'solicitudEntrega', component:  SolicitudEntregaComponent},
   {path: 'productosBanco', component:  ProductosBancoComponent},
+  {path: 'productos-Personas', component:  ProductosPersonasComponent},
+
  
   {
     path: 'sesion',
