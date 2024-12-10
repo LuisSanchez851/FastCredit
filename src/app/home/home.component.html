@@ -4,6 +4,16 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
   />
 </div>
+<title>Galería de Imágenes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <style>
+    .carousel-item img {
+      object-fit: cover;
+      height: 300px;
+      width: 100%;
+    }
+  </style>
 
 <div class="container mt-5">
   <h2 class="text-center mb-4">Galería de Imágenes</h2>
@@ -21,25 +31,23 @@
         <div class="row">
           <div class="col-md-4">
             <div class="card shadow-sm">
-              <img src="assets/img/image1.jpg" class="card-img-top" alt="Imagen 1">
+              <img src="assets/img/1.jpeg" class="card-img-top" alt="Imagen 1">
               <div class="card-body">
-                <h5 class="card-title">Título 1</h5>
                 <p class="card-text">Descripción breve de la imagen 1.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card shadow-sm">
-              <img src="assets/img/image2.jpg" class="card-img-top" alt="Imagen 2">
+              <img src="assets/img/2.jpeg" class="card-img-top" alt="Imagen 2">
               <div class="card-body">
-                <h5 class="card-title">Título 2</h5>
                 <p class="card-text">Descripción breve de la imagen 2.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card shadow-sm">
-              <img src="assets/img/image3.jpg" class="card-img-top" alt="Imagen 3">
+              <img src="assets/img/3.jpg" class="card-img-top" alt="Imagen 3">
               <div class="card-body">
                 <h5 class="card-title">Título 3</h5>
                 <p class="card-text">Descripción breve de la imagen 3.</p>
@@ -53,27 +61,24 @@
         <div class="row">
           <div class="col-md-4">
             <div class="card shadow-sm">
-              <img src="assets/img/image4.jpg" class="card-img-top" alt="Imagen 4">
+              <img src="assets/img/4.jpg" class="card-img-top" alt="Imagen 4">
               <div class="card-body">
-                <h5 class="card-title">Título 4</h5>
                 <p class="card-text">Descripción breve de la imagen 4.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card shadow-sm">
-              <img src="assets/img/image5.jpg" class="card-img-top" alt="Imagen 5">
+              <img src="assets/img/5.jpg" class="card-img-top" alt="Imagen 5">
               <div class="card-body">
-                <h5 class="card-title">Título 5</h5>
                 <p class="card-text">Descripción breve de la imagen 5.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card shadow-sm">
-              <img src="assets/img/image6.jpg" class="card-img-top" alt="Imagen 6">
+              <img src="assets/img/6.jpeg" class="card-img-top" alt="Imagen 6">
               <div class="card-body">
-                <h5 class="card-title">Título 6</h5>
                 <p class="card-text">Descripción breve de la imagen 6.</p>
               </div>
             </div>
@@ -126,16 +131,10 @@
   </div>
 </div>
 
-
 <div class="container mt-5">
-  <div class="row justify-content-center" style="margin-top: 10%">
+  <div class="row justify-content-center">
     <div class="col text-center m-5">
-      <img
-        src="assets/img/logoCreidtFast.png"
-        alt="Logo Credit Fast"
-        class="img-fluid"
-        style="max-width: 150px"
-      />
+      <img src="assets/img/logoCreidtFast.png" alt="Logo Credit Fast" class="img-fluid" style="max-width: 150px">
       <p class="mt-3">Solicita tu tarjeta de crédito con nosotros</p>
       <p>¡Es muy fácil!</p>
       <p>
@@ -146,53 +145,33 @@
     </div>
 
     <div class="col text-center m-5">
-      <img
-        src="assets/img/tarjetacredito.png"
-        alt="Tarjeta de crédito"
-        class="img-fluid"
-      />
+      <img src="assets/img/tarjetacredito.png" alt="Tarjeta de crédito" class="img-fluid">
       <p class="mt-3">
-        Con nuestra tarjeta de crédito podrás disfrutar de beneficios
-        exclusivos, promociones especiales y la tranquilidad de realizar compras
-        seguras en cualquier lugar del mundo.
+        Con nuestra tarjeta de crédito podrás disfrutar de beneficios exclusivos, promociones especiales y la tranquilidad de realizar compras seguras en cualquier lugar del mundo.
       </p>
-      <button class="btn btn-primary mt-3" routerLink="./solicitud">
-        SOLICITAR
-      </button>
+      <button class="btn btn-primary mt-3" routerLink="./solicitud">SOLICITAR</button>
     </div>
   </div>
 </div>
 
-<div class="container mt-5" style="text-align: center;">
-  <h2>¿Quienes somos?</h2>
+<div class="container mt-5">
+  <h2 class="text-center">¿Quienes somos?</h2>
   <p style="margin: 50px;">
-    Es una empresa financiera dedicada a ofrecer soluciones de crédito
-    personalizadas y accesibles, pensadas para acompañarte en cada etapa de tu
-    vida financiera. Sabemos que en ocasiones surgen necesidades imprevistas o
-    proyectos que requieren un impulso económico, por eso nos comprometemos a
-    brindarte el apoyo que necesitas de manera rápida, segura y flexible. Desde
-    nuestra fundación, hemos trabajado para ser un aliado confiable en el acceso
-    al crédito, con un enfoque en la inclusión financiera y el bienestar de
-    nuestros clientes. Nuestro objetivo es ayudarte a lograr tus metas
-    personales, familiares o profesionales, ofreciéndote productos financieros
-    adaptados a tus necesidades y capacidad de pago.
+    Es una empresa financiera dedicada a ofrecer soluciones de crédito personalizadas y accesibles, pensadas para acompañarte en cada etapa de tu vida financiera...
   </p>
 </div>
 
-<div class="container mt-5" style="text-align: center;">
-  <h2>Nuestra Vision</h2>
+<div class="container mt-5">
+  <h2 class="text-center">Nuestra Vision</h2>
   <p style="margin: 50px;">
-    Ser la empresa financiera líder en inclusión y accesibilidad de crédito,
-    brindando productos innovadores que promuevan el bienestar económico de
-    nuestros clientes y fomenten su crecimiento financiero personal y familiar.
+    Ser la empresa financiera líder en inclusión y accesibilidad de crédito, brindando productos innovadores que promuevan el bienestar económico...
   </p>
 </div>
-<div class="container mt-5" style="text-align: center;">
-  <h2>Nuestra Mision</h2>
+
+<div class="container mt-5">
+  <h2 class="text-center">Nuestra Mision</h2>
   <p style="margin: 50px;">
-    Ofrecer soluciones de crédito accesibles, transparentes y personalizadas,
-    que permitan a nuestros clientes alcanzar sus objetivos financieros de
-    manera responsable y con confianza.
+    Ofrecer soluciones de crédito accesibles, transparentes y personalizadas, que permitan a nuestros clientes alcanzar sus objetivos financieros...
   </p>
 </div>
 
@@ -226,8 +205,8 @@
         </div>
       </div>
     </div>
-    <!-- Tarjeta 2 -->
-    <div class="col-12 col-md-20 mb-5" style="">
+   
+    <div class="col-12 col-md-20 mb-5">
       <div class="card shadow-sm p-5">
         <div class="d-flex align-items-center">
           <img
